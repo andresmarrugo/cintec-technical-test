@@ -1,4 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Objetivos de la prueba:
+
+- [x] Crear una aplicación en Angular/React.
+- [x] Permitir el ingreso del tipo y número de documento de un cliente.
+- [x] Realizar una consulta de la información básica del cliente.
+- [x] Crear una primera pantalla de ingreso de información.
+  - [x] Tener tres campos: tipo, número de documento y país.
+  - [x] Incluir un botón "Buscar" inicialmente inactivo.
+- [x] Validar el campo de número de documento:
+  - [x] Debe tener un mínimo de 8 caracteres y un máximo de 11.
+  - [x] Debe aceptar solamente números.
+  - [ ] Mostrar el número con separadores de miles.
+- [x] Usar una lista desplegable para el campo "tipo de documento".
+  - [x] Por defecto, no debe aparecer ninguno seleccionado.
+- [x] Hacer que los campos "tipo de documento" y "número de documento" sean obligatorios para habilitar el botón "Buscar".
+- [x] Consumir el servicio https://restcountries.com/v3.1/all para obtener la lista de países y cargarla en el campo de país.
+- [x] Crear una segunda pantalla de resumen.
+  - [x] Persistir los datos de la primera pantalla en esta nueva.
+  - [x] Permitir al cliente visualizar información.
+  - [x] Incluir un botón "Volver" para regresar a la pantalla anterior.
 
 ## Getting Started
 
@@ -16,18 +35,19 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Run Cypres test
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+run the next commmand:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npm run cypress:run
+# or
+yarn cypress:run
+# or
+pnpm cypress:run
+# or
+bun cypress:run
+```
 
 ## Deploy on Vercel
 

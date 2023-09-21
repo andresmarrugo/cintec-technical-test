@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "document-type": "CC",
+            "document-number": 11111111,
+            "name": "Andrés",
+            "lastname": "Marrugo",
+            "country": "COL",
+            "phone": 3002020022
+        },
+        {
+            "document-type": "CC",
+            "document-number": 22222222222,
+            "name": "Angie",
+            "lastname": "Bello",
+            "country": "COL",
+            "phone": 3005520033
+        },
+        {
+            "document-type": "PP",
+            "document-number": 123456789,
+            "name": "Gabriela",
+            "lastname": "Ramos",
+            "country": "COL",
+            "phone": 3005920022
+        }
+    ]
+}
